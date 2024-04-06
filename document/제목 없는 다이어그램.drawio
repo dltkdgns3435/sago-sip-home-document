@@ -1,9 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2024-04-06T07:02:55.340Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" version="24.2.2" etag="aGKgR972l6DYJsYUupRV" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-06T07:12:42.886Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" etag="cqG4yfa42eam0wE9eHrY" version="24.2.2" type="github">
   <diagram name="페이지-1" id="GIzvQUrD38Mwg5cGf1GL">
-    <mxGraphModel>
+    <mxGraphModel dx="1242" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-2" value="회원/인증 API 서버" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="240" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-8" value="내부망" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="200" width="440" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-10" value="코어(부동산) API 서버" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wqJIv9egtJ41It_KT7Oh-8">
+          <mxGeometry x="240" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-11" value="코어(부동산) 배치 서버" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wqJIv9egtJ41It_KT7Oh-8">
+          <mxGeometry x="40" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-9" value="외부망" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="240" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-1" value="게이트웨이" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wqJIv9egtJ41It_KT7Oh-9">
+          <mxGeometry x="40" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-7" value="백오피스 API서버" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wqJIv9egtJ41It_KT7Oh-9">
+          <mxGeometry x="40" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-12" value="DB" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="520" width="440" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-4" value="Redis" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="wqJIv9egtJ41It_KT7Oh-12">
+          <mxGeometry x="40" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-3" value="PostgreSQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="wqJIv9egtJ41It_KT7Oh-12">
+          <mxGeometry x="240" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-14" value="SPA 서버" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="520" width="240" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-15" value="서비스(부동산)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wqJIv9egtJ41It_KT7Oh-14">
+          <mxGeometry x="40" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wqJIv9egtJ41It_KT7Oh-16" value="백오피스" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wqJIv9egtJ41It_KT7Oh-14">
+          <mxGeometry x="40" y="160" width="160" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
